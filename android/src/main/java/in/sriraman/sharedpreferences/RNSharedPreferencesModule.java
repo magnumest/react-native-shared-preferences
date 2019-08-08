@@ -110,7 +110,7 @@ public class RNSharedPreferencesModule extends ReactContextBaseJavaModule {
 	public void getBoolean(String key, Callback successCallback){
 
 		initSharedHandler();
-		String value = SharedDataProvider.getSharedBooleanValue(key);
+		Boolean value = SharedDataProvider.getSharedBooleanValue(key);
 		successCallback.invoke(value);
 
 	}
